@@ -13,23 +13,23 @@ def radio_used():
     global coefficient
     if radio_state.get() == 1:
         coefficient = 1.6093
-        label_upper["text"] = "Km"
+        label_upper["text"] = "km"
         label_lower["text"] = "mi"
         button_clicked()
     if radio_state.get() == 2:
         coefficient = 0.6214
         label_upper["text"] = "mi"
-        label_lower["text"] = "Km"
+        label_lower["text"] = "km"
         button_clicked()
     if radio_state.get() == 3:
         coefficient = 0.5399568
-        label_upper["text"] = "Km"
-        label_lower["text"] = "Nm"
+        label_upper["text"] = "km"
+        label_lower["text"] = "NM"
         button_clicked()
     if radio_state.get() == 4:
         coefficient = 1.852
-        label_upper["text"] = "Nm"
-        label_lower["text"] = "Km"
+        label_upper["text"] = "NM"
+        label_lower["text"] = "km"
         button_clicked()
 
 
